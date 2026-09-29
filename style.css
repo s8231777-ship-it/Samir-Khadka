@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eaf4fb;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: white;
+}
+
+.header-box {
+    padding: 10px;
+}
+
+.title h1 {
+    color: #0755b5;
+    margin: 5px;
+}
+
+nav {
+    background: #064bea;
+    padding: 12px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 15px;
+}
+
+.card {
+    background: #dceeff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #aaa;
+}
+
+h2 {
+    color: #0755b5;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 300px;
+}
+
+.project-box,
+.skills-box {
+    display: flex;
+    gap: 15px;
+}
+
+.project,
+.skill {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background: #064bea;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+}
+
+footer {
+    background: #064bea;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}

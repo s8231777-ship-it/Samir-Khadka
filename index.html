@@ -1,125 +1,191 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-
-    <style>
-        body {
-            background-color: #FFFFFF;
-            color: #000000;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        .portfolio {
-            width: 70%;
-            margin: 30px auto;
-            padding: 40px;
-            background-color: #FFFFFF;
-            min-height: 600px;
-        }
-
-        img {
-            width: 80px;
-            border-radius: 50%;
-        }
-
-        h1 {
-            font-size: 40px;
-            margin: 20px;
-            color: #000000;
-        }
-
-        p {
-            color: #000000;
-            font-size: 18px;
-        }
-
-        h2 {
-            margin: 40px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #000000;
-            color: #000000;
-        }
-
-        .social {
-            margin-top: 60px;
-        }
-
-        .social h3 {
-            color: #000000;
-        }
-
-        .social a {
-            color: #000000;
-            margin: 15px;
-            text-decoration: none;
-        }
-
-        footer {
-            margin-top: 50px;
-            color: #000000;
-        }
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir Khadka - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="portfolio">
+    <!-- Header -->
+    <header>
+        <div class="header-box">
+            <div class="logo">
+                <img src="image/Logo.png" alt="Samir Khadka Logo" width="70">
+            </div>
 
-        <!-- Logo -->
-        <img src="assests/me.jpeg" alt="My Logo">
-
-        <!-- Portfolio Heading -->
-        <h1>My Portfolio</h1>
-
-        <p>
-            Welcome to my portfolio. Here you can learn about me,
-            my skills, my projects, and how to contact me.
-        </p>
-
-        <!-- Portfolio Sections -->
-        <h2>About Me</h2>
-
-        <h2>My Skills</h2>
-
-        <h2>My Projects</h2>
-
-        <h2>Contact</h2>
-
-        <!-- Social Links -->
-        <div class="social">
-
-            <h3>Find Me On</h3>
-
-            <a href="#">
-                <img src="assests/gmail.jpeg" alt="Email">
-            </a>
-
-            <a href="#">
-                <img src="assests/linkdin.jpeg" alt="LinkedIn">
-            </a>
-
-            <a href="#">
-                <img src="assests/github.jpeg" alt="GitHub">
-            </a>
-
-            <a href="#">
-                <img src="assests/whatsapp.jpeg" alt="WhatsApp">
-            </a>
-
+            <div class="title">
+                <h1>Samir Khadka</h1>
+                <p>Web Development Student</p>
+            </div>
         </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>Copyright © 2026. All Rights Reserved.</p>
-        </footer>
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-box">
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    </div>
+    <main>
+
+        <!-- About Me -->
+        <section id="about">
+            <div class="card about-box">
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+
+                        <p>
+                            Hello! My name is Samir Khadka. I am a student
+                            interested in web development and software
+                            engineering. I enjoy learning new technologies
+                            and creating useful and accessible websites.
+                        </p>
+
+                        <p>
+                            My goal is to improve my technical skills and
+                            develop professional and user-friendly websites.
+                        </p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="image/Photo.jpeg"
+                             alt="Samir Khadka"
+                             width="300">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="card">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                </div>
+
+                <div class="project-box">
+                    <div class="project">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A personal website created using HTML and CSS.
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>Web Development Projects</h3>
+                        <p>
+                            Different web projects created for learning
+                            and practical experience.
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>Data Structure Projects</h3>
+                        <p>
+                            Programming projects focused on data structures
+                            and algorithms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <div class="card">
+                <h2>Technical Skills</h2>
+
+                <div class="skills-box">
+                    <div class="skill">
+                        <strong>HTML5</strong>
+                        <p>Creating structured web pages.</p>
+                    </div>
+
+                    <div class="skill">
+                        <strong>CSS</strong>
+                        <p>Designing and styling websites.</p>
+                    </div>
+
+                    <div class="skill">
+                        <strong>JavaScript</strong>
+                        <p>Creating interactive web experiences.</p>
+                    </div>
+
+                    <div class="skill">
+                        <strong>Git & GitHub</strong>
+                        <p>Managing and sharing software projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <div class="card">
+                <h2>Education</h2>
+
+                <div class="education-box">
+                    <h3>Information Technology</h3>
+                    <p>
+                        Currently studying information technology with a
+                        focus on web development and software engineering.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="card">
+                <h2>Contact Me</h2>
+
+                <div class="contact-box">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message"
+                                      name="message"
+                                      rows="6"></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-box">
+            <p>© 2026 Samir Khadka. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
