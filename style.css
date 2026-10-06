@@ -10,22 +10,34 @@ body {
 }
 
 header {
-    text-align: center;
-    background: white;
-}
-
-.header-box {
-    padding: 10px;
-}
-
-.title h1 {
-    color: #0755b5;
-    margin: 5px;
+    background: #064bea;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
     background: #064bea;
-    padding: 12px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-box img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 nav ul {
@@ -106,4 +118,37 @@ footer {
     color: white;
     text-align: center;
     padding: 12px;
+}
+
+/* Responsive Styles for Mobile and Tablet Screens */
+@media screen and (max-width: 768px) {
+    
+    /* Stack navigation bar elements vertically */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Stack About Me section vertically */
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Stack project cards and skills vertically */
+    .project-box,
+    .skills-box {
+        flex-direction: column;
+    }
 }
