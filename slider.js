@@ -248,4 +248,3 @@ class ImageSlider {
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-slider]").forEach((el) => new ImageSlider(el));
 });
-
